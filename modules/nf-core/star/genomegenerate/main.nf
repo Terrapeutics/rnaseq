@@ -30,6 +30,7 @@ process STAR_GENOMEGENERATE {
             --genomeDir star/ \\
             --genomeFastaFiles $fasta \\
             --sjdbGTFfile $gtf \\
+            --sjdbGTFfeatureExon CDS \\
             --runThreadN $task.cpus \\
             $memory \\
             $args

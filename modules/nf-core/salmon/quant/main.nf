@@ -60,7 +60,7 @@ process SALMON_QUANT {
         --geneMap $gtf \\
         --threads $task.cpus \\
         --libType=$strandedness \\
-        --minAssignedFrags 1 \\
+        --minAssignedFrags 0 \\
         --minScoreFraction 0.01 \\
         --meta \\
         $reference \\

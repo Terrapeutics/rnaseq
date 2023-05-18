@@ -61,7 +61,8 @@ process SALMON_QUANT {
         --threads $task.cpus \\
         --libType=$strandedness \\
         --minAssignedFrags 1 \\
-        --minScoreFraction 0.1 \\
+        --minScoreFraction 0.01 \\
+        --meta \\
         $reference \\
         $input_reads \\
         $args \\
